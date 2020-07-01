@@ -1,0 +1,456 @@
+
+body {
+  padding-top: 100px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 100px;
+  }
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
+
+/*..... Navigitaion Bar..... */
+.navbar {
+     border-bottom: 1px solid #cccccc;
+    
+}
+
+
+/* Effect 3 */
+.effect3 a {
+	color: #000;
+	overflow: hidden;
+	padding: 0 5px;
+	height: 1.2em;
+
+}
+
+.effect3 a span {
+	position: relative;
+	display: inline-block;
+    transition: transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	-webkit-transition: -webkit-transform 0.3s;
+}
+
+.effect3 a span::before {
+	color: #6ABD52;
+	position: absolute;
+	top: 100%;
+	content: attr(data-hover);
+
+	transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.effect3 a:hover span,
+.effect3 a:focus span {
+	transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+}
+/*
+@media screen and (max-width: 770px) {
+   .effect3 a span::before {
+	  display:none;
+   }
+*/
+	.mob-menu--title {
+    font-size: 0px!important;
+	float: right!important;
+	display: block !important;
+}
+	.header-content-wrapper {
+    display: inline-flex!important;
+	}
+}
+
+/*
+.effect3 a:Hover{
+    color: green;
+   -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1); 
+      -webkit-transition: .3s;
+          transition: .3s;
+}
+*/
+
+
+/*..... Header Style..... */
+/*
+.page-header {
+    background: url(../images/header.jpg) no-repeat;
+      padding: 40px 0;
+    margin-top: 0px;
+
+}
+*/
+/* 
+.page-header h1 {
+   color: #fff;
+    color: green;
+   
+}
+*/
+.page-header h1 {
+  color: green;
+  position: relative;
+  -webkit-animation: myfirst 1s 1;
+  transition: 0.5s;
+}
+@-webkit-keyframes myfirst {
+    0%   {left: -20px;}
+    50%  {left: 10px;}
+    100% {left: 0px;}
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+ 
+/*..... Various Text..... */
+.text-red{
+  color: red;
+	
+}
+
+.text-green{
+  color: green;
+	
+}
+
+.text-white{
+  color: white;
+	
+}
+.text-deepgrey{
+  color: #17202A;
+	
+}
+
+.text-saddow-red {
+    text-shadow: 0px 0px 3px red;
+}
+.text-saddow-yellow {
+    text-shadow: 0px 0px 3px yellow;
+}
+.text-saddow-white {
+    text-shadow: 0px 0px 3px white;
+}
+.text-saddow-green {
+    text-shadow: 0px 0px 3px green;
+}
+
+.text-saddow-black {
+    text-shadow: 0px 0px 3px black;
+}
+.WithBgImage {
+    background-repeat: no-repeat;
+    background-image: url('/school-image/welcome.png');
+    height: 600px;
+    width: 600px;
+}
+
+
+/*..... Footer..... */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+section .section-title {
+    text-align: center;
+    color: #ffff80;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.footer-container{
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 30px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 10px;
+    align-self: center;
+    
+}
+
+#footer {
+ 
+    margin-top: 0px;
+    padding-left: 0px;
+}
+#footer h5{
+	padding-left: 10px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer h3{
+	padding-left: 10px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer p{
+	padding-left: 10px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffff80;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+}
+/*..... Footer End..... */
+/* footer social icons */
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+ 
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+    
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ........Team..... :> */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#team {
+    background: #eee !important;
+}
+
+ .btn-primary:hover,
+ .btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+ .teamsection {
+    padding: 60px 0;
+    margin-bottom: 20px;
+}
+
+ .teamsection .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+    min-width: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
